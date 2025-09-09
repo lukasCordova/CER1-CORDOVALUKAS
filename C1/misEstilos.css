@@ -1,0 +1,40 @@
+.tema-p{
+    background-color: #252422;
+    color: #eff1ed;
+    /*
+    #282f44 gris
+    #453a49 morado
+    #6d3b47 rosado
+    */
+
+    /*
+    #6f1d1b rojo
+    #bb9457 crema
+    #432818 cafe
+    #99582a manjar
+    */
+}
+.tema-s{
+    background-color: #695235;
+    color: #e9ecef;
+}
+.tema-t{
+    background-color: #eb5e28;
+    color: #fffcf2;
+}
+
+.texto-p{
+    color: #fffcf2;
+}
+.borde-claro{
+    border: #ccc5b9;
+    border-radius: 10%;
+}
+.boton-p{
+    border: #111;
+    background-color: #a72f00;
+    color: #111;
+}
+#hero{
+    background: url("https://elsureno.cl/wp-content/uploads/2025/01/matiah-chinaski-y-dj-perez.jpg") no-repeat center;
+}   

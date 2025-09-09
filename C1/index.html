@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarts Events</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="misEstilos.css">
+
+</head>
+<body class="tema-p fw-bold">
+    <nav class="navbar navbar-expand-sm fixed-top tema-s">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="texto-p fs-3">Smart Events</span>
+          </a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon tema-claro borde-claro"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li><a class="nav-link active" href="#hero"><span class="texto-p">Inicio</span></a></li>
+              <li><a class="nav-link" href="#eventos"><span class="texto-p">Eventos</span></a></li>
+              <li><a class="nav-link" href="#comunidad"><span class="texto-p">Comunidad</span></a></li>
+              <li><a class="nav-link" href="#contacto"><span class="texto-p">Contacto</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <section id="hero" class="d-flex flex-column align-items-center text-center justify-content-center vh-100 texto-p p-5">
+        <h1 class="fs-1">Matiah Chinaski y Dj Perez</h1>
+        <h2 class="fs-2">En teatro Aula Magna</h2>
+        <p>El evento comienza en: </p>
+        <div class="cuentaRegresiva" id="cuentaRegresiva"></div>
+    </section>
+
+    <section id="eventos" class="container-fluid mb-3 align-items-center text-center">
+        <h1 class="m-4">EVENTOS</h1>
+        <div id="fila-eventos" class="row">  
+          <!--eventos con js-->  
+        </div>
+    </section>
+    <section id="comunidad" class="container-fluid d-flex flex-column align-items-center text-center justify-content-center">
+      <h1 class="m-4">COMUNIDAD</h1>
+      <div class="container">
+        <h2>Comentarios recientes:</h2>
+        <ul id="lista-comentarios" class="list-group mb-3">
+          <!-- comentarios con js-->
+        </ul>
+      </div>
+      <div class="container m-4">
+        <h3>Deja tu comentario</h3>
+        <form id="form-comentario">
+          <div class="mb-3">
+            <label for="nombre-form" class="form-label">Nombre o Alias</label>
+            <input type="text" class="form-control" id="nombre-form" placeholder="Tu nombre o alias" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje-form" class="form-label">Comentario</label>
+            <textarea class="form-control" id="mensaje-form" rows="3" maxlength="500" placeholder="Escribe tu comentario (máx. 500 caracteres)" required></textarea>
+          </div>
+          <button type="submit" class="btn boton-p">Publicar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="tema-s" id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 my-3">
+            <h5>Contacto</h5>
+            <p class="mb-1">📍 Dirección: UTFSM JMC Sede Viña Del Mar</p>
+            <p class="mb-1">📞 Teléfono: +56 9 1234 5678</p>
+            <p class="mb-0">✉️ Email: contacto@usm.cl</p>
+          </div>
+
+          <!-- Enlaces rápidos -->
+          <div class="col-md-4 my-3">
+            <h5>Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="#hero" class="text-white text-decoration-none">Inicio</a></li>
+              <li><a href="#eventos" class="text-white text-decoration-none">Eventos</a></li>
+              <li><a href="#comunidad" class="text-white text-decoration-none">Comunidad</a></li>
+              <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 my-3 text-center">
+            <h5>Síguenos en ig</h5>
+            <a href="#"><img alt="IG Aqui" width="32" class="mx-1"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="misScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
